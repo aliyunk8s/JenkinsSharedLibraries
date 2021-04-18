@@ -1,3 +1,9 @@
 def call(params) {
-    sh "${params}"
+    sh '''
+    hostname
+    echo ${params}
+    pwd
+    ls
+    ${params}
+    '''
 }
