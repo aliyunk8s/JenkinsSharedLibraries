@@ -1,4 +1,5 @@
 def call(params) {
+    sh "echo ${params}"
     sh '''
     hostname
     echo ${params}
@@ -6,4 +7,5 @@ def call(params) {
     ls
     ${params}
     '''
+    sh "${params}"
 }
